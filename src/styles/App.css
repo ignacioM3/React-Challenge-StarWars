@@ -1,0 +1,62 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url('/public/images/Sky-night-rotation-space-background.jpg');
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 140px 20px 200px;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid blue;
+}
+
+
+li, a{
+  font-weight: 500;
+  font-size: 22px;
+  color: rgb(6, 139, 255);
+  text-decoration: none;
+
+}
+ul {
+  list-style: none; 
+}
+
+
+
+.img-logo{
+  cursor: pointer;
+  width: 150px;
+  order: 1;
+}
+
+
+
+.input-conteiner{
+  order: 2;
+  margin: auto 0;
+}
+
+.input-conteiner input{
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+
+.nav__links{
+  order:3; 
+  margin: auto 0;
+}
+
+
+.nav__links li{
+  display: inline-block;
+  padding: 0 50px;
+}
+
