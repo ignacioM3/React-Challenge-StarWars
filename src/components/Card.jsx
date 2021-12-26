@@ -1,11 +1,14 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { addFavorite } from '../actions/favorite'
 
-function Card({
-    name,
-    climate,
-    terrain,
-    diameter
-}) {
+function Card({name,climate,terrain,diameter}) {
+    const dispatch = useDispatch()
+    
+    const handleAddFavorite = () => {
+        dispatch(addFavorite(name, climate, terrain, diameter))
+    }
+    
     return (
         <div>
             <div className="col-md-4">
@@ -25,8 +28,8 @@ function Card({
                         {/* card info end  */}
                     </div>
                     {/* button for cards  */}
-                    <div className="button-card cursor shoe">
-                        <h3 className="text-uppercase">Agregar a Favorito</h3>
+                    <div className="button-card cursor shoe"  >
+                        <h3 className="text-uppercase" onClick={handleAddFavorite}>Agregar a Favorito</h3>
                     </div>
                 </div>
             </div>

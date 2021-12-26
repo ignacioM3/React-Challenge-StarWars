@@ -3,12 +3,14 @@ import Header from './components/Header';
 import Main from './pages/Main';
 import Favorite from './pages/Favorite';
 import './styles/App.css'
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 
 function App() {
   return (
-    <div>
 
+    <Provider store={store}>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -16,7 +18,8 @@ function App() {
           <Route path="/favorite" element={<Favorite />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </Provider>
+
   );
 }
 

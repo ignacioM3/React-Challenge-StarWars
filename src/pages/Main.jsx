@@ -4,10 +4,6 @@ import '../styles/main.css'
 import useFetchPlanets from '../hooks/useFetchPlanets'
 import Number from '../components/Number'
 
-
-
-
-
 function Main() {
 
     const [number, setNumber] = useState(1)

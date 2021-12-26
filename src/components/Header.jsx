@@ -14,9 +14,10 @@ function Header() {
                     <li><Link to="/favorite">Favorite <i className="far fa-bookmark"></i></Link></li>
                 </ul>
             </nav>
-            <div className="input-conteiner">
+            <from className="input-conteiner">
                 <input type="text" />
-            </div>
+                <button type="submit"><i className="fas fa-search"></i></button>
+            </from>
         </header>
     )
 }
