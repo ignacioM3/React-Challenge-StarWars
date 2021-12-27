@@ -4,6 +4,7 @@ import { addFavorite, deleteFavorite } from '../actions/favorite'
 
 function Card({ name, climate, terrain, diameter, initialState }) {
     const dispatch = useDispatch()
+
     const [buttonFavorite, setButton] = useState(initialState)
 
     const handleAddFavorite = () => {
@@ -31,9 +32,9 @@ function Card({ name, climate, terrain, diameter, initialState }) {
                         </h5>
                         {/*  card info */}
                         <div className='info'>
-                            <p>Diametro: {diameter}</p>
-                            <p>Clima: {climate}</p>
-                            <p>Terreno: {terrain}</p>
+                            <p>Diameter: {diameter}</p>
+                            <p>Climate: {climate}</p>
+                            <p>Terrain: {terrain}</p>
                         </div>
                         {/* card info end  */}
                     </div>
