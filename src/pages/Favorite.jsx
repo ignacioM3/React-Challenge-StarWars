@@ -1,10 +1,9 @@
 import React from 'react'
-import Card from '../components/Card'
 import { useSelector } from 'react-redux'
+import CardFavorite from '../components/CardFavorite'
 
 function Favorite() {
 
-    const initialState = 0;
     const { favorites } = useSelector(state => state.favoriteReducer)
 
     return (
@@ -14,12 +13,11 @@ function Favorite() {
                 <div class="row">
                     {
                         favorites.map((product, index) =>
-                            <Card key={index}
+                            <CardFavorite key={index}
                                 name={product.name}
                                 diameter={product.diameter}
                                 climate={product.climate}
                                 terrain={product.terrain}
-                                initialState={initialState}
                             />
                         )
 

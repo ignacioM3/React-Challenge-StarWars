@@ -7,7 +7,6 @@ import Number from '../components/Number'
 function Main() {
 
     const [number, setNumber] = useState(1)
-    const initialState = 1;
 
     let url = `https://swapi.dev/api/planets/?page=${number}`
 
@@ -50,7 +49,6 @@ function Main() {
                                         diameter={product.diameter}
                                         climate={product.climate}
                                         terrain={product.terrain}
-                                        initialState={initialState}
                                     />
                                 )
                             )

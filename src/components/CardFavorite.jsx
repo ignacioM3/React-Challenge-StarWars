@@ -1,21 +1,15 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { useDispatch } from 'react-redux'
-import { addFavorite, deleteFavorite } from '../actions/favorite'
+import {  deleteFavorite } from '../actions/favorite'
 
-function Card({ name, climate, terrain, diameter }) {
+
+function CardFavorite({ name, climate, terrain, diameter}) {
+
+
     const dispatch = useDispatch()
-    const initialState = true;
 
-    const [buttonFavorite, setButton] = useState(initialState)
-
-    const handleAddFavorite = () => {
-        dispatch(addFavorite({ name, climate, terrain, diameter }))
-        setButton(false)
-        
-    }
 
     const handleDeleteFavorite = () => {
-        setButton(true)
         dispatch(deleteFavorite({ name, climate, terrain, diameter }))
         
     }
@@ -40,21 +34,13 @@ function Card({ name, climate, terrain, diameter }) {
                         {/* card info end  */}
                     </div>
                     {/* button for cards  */}
-                    {
-                        buttonFavorite ?
-                            <div className="button-card cursor shoe" onClick={handleAddFavorite} >
-                                <h3 className="text-uppercase" >Add to Favorite</h3>
-                            </div>
-                            :
-                            <div className="button-card cursor shoe"  onClick={handleDeleteFavorite} >
-                                <h3 className="text-uppercase-delete" >Delete to Favorite</h3>
-                            </div>
-                    }
-
+                    <div className="button-card cursor shoe" onClick={handleDeleteFavorite} >
+                        <h3 className="text-uppercase-delete" >Delete to Favorite</h3>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Card
+export default CardFavorite
