@@ -32,10 +32,16 @@ function Header() {
                     <li><Link to="/favorite">Favorite <i className="far fa-bookmark"></i></Link></li>
                 </ul>
             </nav>
-            <form className="input-conteiner" onSubmit={handleSearch}>
+            {/* <form className="input-conteiner" onSubmit={handleSearch}>
                 <input type="search" name="keywords" onChange={handleInputChange} value={keywords} />
-                <button type="submit"><i className="fas fa-search">Buscar</i></button>
-            </form>
+                <button type="submit"><i className="fas fa-search"></i></button>
+            </form> */}
+            <form className="search-form-desktop" onSubmit={handleSearch} >
+                    <div className='search-bar'>
+                        <input type="search" name="keywords" placeholder='Search' onChange={handleInputChange} value={keywords} />
+                        <button type="submit"><i className="fas fa-search"></i></button>
+                    </div>
+                </form>
         </header>
     )
 }

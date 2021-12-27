@@ -36,16 +36,42 @@ ul {
   order: 1;
 }
 
-
-
-.input-conteiner{
+.search-form-desktop {
+  display: inherit;
   order: 2;
-  margin: auto 0;
 }
 
-.input-conteiner input{
-  border-radius: 15px;
-  font-size: 25px;
+
+.search-bar  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ width: 350px;
+}
+
+.search-bar input{
+  border: 1px solid white;
+  border-radius: 50px;
+  flex-grow: 1;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.932);
+  padding: 5px 10px;
+  margin: 0 10px;
+  color: black;
+}
+
+.search-bar input:focus {
+  outline: none;
+} 
+
+.search-bar input::placeholder {
+  color: #070707af;
+}
+
+.search-bar button {
+  border: none;
+  background-color: white;
+  position: relative;
+  left: -33px;
 }
 
 
@@ -59,4 +85,6 @@ ul {
   display: inline-block;
   padding: 0 50px;
 }
+
+
 
