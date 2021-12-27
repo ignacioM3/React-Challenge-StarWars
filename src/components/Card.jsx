@@ -1,14 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useDispatch } from 'react-redux'
-import { addFavorite } from '../actions/favorite'
+import { addFavorite, deleteFavorite } from '../actions/favorite'
 
-function Card({name,climate,terrain,diameter}) {
+function Card({ name, climate, terrain, diameter, initialState }) {
     const dispatch = useDispatch()
-    
+    const [buttonFavorite, setButton] = useState(initialState)
+
     const handleAddFavorite = () => {
-        dispatch(addFavorite(name, climate, terrain, diameter))
+        dispatch(addFavorite({ name, climate, terrain, diameter }))
+        setButton(0)
+        
     }
-    
+
+    const handleDeleteFavorite = () => {
+        setButton(1)
+        dispatch(deleteFavorite({ name, climate, terrain, diameter }))
+        
+    }
+
+
     return (
         <div>
             <div className="col-md-4">
@@ -28,9 +38,17 @@ function Card({name,climate,terrain,diameter}) {
                         {/* card info end  */}
                     </div>
                     {/* button for cards  */}
-                    <div className="button-card cursor shoe"  >
-                        <h3 className="text-uppercase" onClick={handleAddFavorite}>Agregar a Favorito</h3>
-                    </div>
+                    {
+                        buttonFavorite === 1?
+                            <div className="button-card cursor shoe" onClick={handleAddFavorite} >
+                                <h3 className="text-uppercase" >Add to Favorite</h3>
+                            </div>
+                            :
+                            <div className="button-card cursor shoe"  onClick={handleDeleteFavorite} >
+                                <h3 className="text-uppercase-delete" >Delete to Favorite</h3>
+                            </div>
+                    }
+
                 </div>
             </div>
         </div>

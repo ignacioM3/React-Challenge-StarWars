@@ -1,8 +1,26 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
-
+import { useDispatch } from 'react-redux';
+import {Link, useNavigate} from 'react-router-dom';
+import { search } from '../actions/favorite';
+import useForm from '../hooks/useForm'
 
 function Header() {
+    const [{keywords}, handleInputChange, reset] = useForm({
+        keywords: "",
+    })
+
+    const navigate = useNavigate()
+    const dispatch = useDispatch() 
+
+    const handleSearch = (e) =>{
+        e.preventDefault()
+        if(keywords !== ""){
+            dispatch(search(keywords));
+            reset()
+            navigate("/result")
+        }
+    }
+
     return (
         <header>
             <Link to="/">
@@ -14,10 +32,10 @@ function Header() {
                     <li><Link to="/favorite">Favorite <i className="far fa-bookmark"></i></Link></li>
                 </ul>
             </nav>
-            <from className="input-conteiner">
-                <input type="text" />
-                <button type="submit"><i className="fas fa-search"></i></button>
-            </from>
+            <form className="input-conteiner" onSubmit={handleSearch}>
+                <input type="search" name="keywords" onChange={handleInputChange} value={keywords} />
+                <button type="submit"><i className="fas fa-search">Buscar</i></button>
+            </form>
         </header>
     )
 }

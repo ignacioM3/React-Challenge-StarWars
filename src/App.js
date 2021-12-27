@@ -5,6 +5,7 @@ import Favorite from './pages/Favorite';
 import './styles/App.css'
 import { Provider } from "react-redux";
 import { store } from "./store";
+import { Result } from "./pages/Result";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/favorite" element={<Favorite />} />
+          <Route path="/result" element={<Result/>} />
         </Routes>
       </BrowserRouter>
     </Provider>

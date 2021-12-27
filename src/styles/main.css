@@ -9,6 +9,9 @@
 .text-uppercase{
   color: aqua;
 }
+.text-uppercase-delete{
+  color: red;
+}
 .row{
   display: flex;
   flex-wrap: wrap;
@@ -142,6 +145,16 @@ img, svg {
   color: white;
   text-align: center;
   margin: 15px 0;
+}
+.page2{
+  color: #3865ff;
+  text-align: center;
+  margin: 15px 0;
+  
+}
+.error-msg{
+  color: #ff7474db;
+  border-bottom: 1px solid white;
 }
 
 
