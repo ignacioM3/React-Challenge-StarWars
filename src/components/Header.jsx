@@ -44,7 +44,7 @@ function Header() {
         <header >
             <div className='header'>
                 <Link to="/">
-                    <img className="img-logo" src="/assets/images/1280px-Star_Wars_Logo.svg.png" alt="" />
+                    <img className="img-logo" src="./assets/images/1280px-Star_Wars_Logo.svg.png" alt="" />
                 </Link>
                 <nav className="nav__links">
                     <ul >
