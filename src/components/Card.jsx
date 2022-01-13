@@ -17,7 +17,6 @@ function Card({ name, climate, terrain, diameter }) {
     const handleDeleteFavorite = () => {
         setButton(true)
         dispatch(deleteFavorite({ name, climate, terrain, diameter }))
-        
     }
 
 
