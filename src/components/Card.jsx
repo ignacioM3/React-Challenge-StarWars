@@ -25,7 +25,7 @@ function Card({ name, climate, terrain, diameter }) {
             <div className="col-md-4">
                 <div className="card">
                     <div className="product">
-                        <img src={`../assets/images/planets/${name}.png`} alt="" className="rounded"
+                        <img src={`./assets/images/planets/${name}.png`} alt="" className="rounded"
                             width="160" />
                         <h5 className='name-planets'>
                             {name}
