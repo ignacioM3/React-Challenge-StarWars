@@ -36,7 +36,7 @@ function Header() {
         if (keywords !== "") {
             dispatch(search(keywords));
             reset()
-            navigate("/result")
+            navigate("/React-Challenge-StarWars/result")
         }
     }
 
