@@ -15,9 +15,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/favorite" element={<Favorite />} />
-          <Route path="/result" element={<Result/>} />
+          <Route path="/React-Challenge-StarWars" element={<Main />} />
+          <Route path="/React-Challenge-StarWars/favorite" element={<Favorite />} />
+          <Route path="/React-Challenge-StarWars/result" element={<Result/>} />
         </Routes>
       </BrowserRouter>
     </Provider>

@@ -43,13 +43,13 @@ function Header() {
     return (
         <header >
             <div className='header'>
-                <Link to="/">
+                <Link to="/React-Challenge-StarWars">
                     <img className="img-logo" src="./assets/images/1280px-Star_Wars_Logo.svg.png" alt="" />
                 </Link>
                 <nav className="nav__links">
                     <ul >
-                        <li><Link to="/">Planets <i className="fas fa-globe-americas"></i></Link></li>
-                        <li><Link to="/favorite">Favorite <i className="far fa-bookmark"></i></Link></li>
+                        <li><Link to="/React-Challenge-StarWars">Planets <i className="fas fa-globe-americas"></i></Link></li>
+                        <li><Link to="/React-Challenge-StarWars/favorite">Favorite <i className="far fa-bookmark"></i></Link></li>
                     </ul>
                 </nav>
                 <form className="search-form-desktop" onSubmit={handleSearch} >
@@ -84,10 +84,10 @@ function Header() {
                 burger &&
                 <nav className="navigation-bar display-mobile" id="navigation-bar-mobile">
                     <ul className="menu-contenedor">
-                        <Link to="/">
+                        <Link to="/React-Challenge-StarWars">
                             <li className="dropdown-menu li-desplegable" > Planets <i className="fas fa-globe-americas"></i></li>
                         </Link>
-                        <Link to="/favorite">
+                        <Link to="/React-Challenge-StarWars/favorite">
                         <li className="dropdown-menu li-desplegable">Favorites <i className="far fa-bookmark"></i></li>
                         </Link>
                         
