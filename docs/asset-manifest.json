@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a4ba94c7.css",
+    "main.js": "/static/js/main.396b21ca.js",
+    "static/media/Sky-night-rotation-space-background.jpg": "/static/media/Sky-night-rotation-space-background.95ceba41c2bd2cc0be23.jpg",
+    "index.html": "/index.html",
+    "main.a4ba94c7.css.map": "/static/css/main.a4ba94c7.css.map",
+    "main.396b21ca.js.map": "/static/js/main.396b21ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4ba94c7.css",
+    "static/js/main.396b21ca.js"
+  ]
+}

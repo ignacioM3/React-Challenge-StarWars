@@ -117,7 +117,7 @@ img, svg {
 .pagination span{
   cursor: pointer;
   color: white;
-  margin: 0 10px;
+  margin: 0 5px; 
   padding: 0 5px;
 }
 
@@ -126,16 +126,13 @@ img, svg {
   background-color: #e7e7e7;
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 8px 17px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
 }
 
-.next{
-  padding: 15px 42px;
-}
 
 .button:hover{
   opacity: .8;
@@ -168,10 +165,20 @@ img, svg {
   .container-card{
   max-width: 720px;
   }
-}
+  .button {
+    padding: 10px 27px;
+  }
 
+  .pagination span{
+    margin: 0 10px; 
+  }
+  
+}
  @media (min-width: 992px){
   .container-card{
   max-width: 1500px;
+  }
+  .button {
+    padding: 15px 32px;
   }
 }

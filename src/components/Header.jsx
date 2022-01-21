@@ -79,16 +79,21 @@ function Header() {
 
 
             </div>
-                {/* <!-- Menú de navegación mobile--> */}
-                {
-                    burger &&
-                    <nav className="navigation-bar display-mobile" id="navigation-bar-mobile">
-                        <ul className="menu-contenedor">
+            {/* <!-- Menú de navegación mobile--> */}
+            {
+                burger &&
+                <nav className="navigation-bar display-mobile" id="navigation-bar-mobile">
+                    <ul className="menu-contenedor">
+                        <Link to="/">
                             <li className="dropdown-menu li-desplegable" > Planets <i className="fas fa-globe-americas"></i></li>
-                            <li className="dropdown-menu li-desplegable"><a href="#promo">Favorites <i className="far fa-bookmark"></i></a></li>
-                        </ul>
-                    </nav>
-                }
+                        </Link>
+                        <Link to="/favorite">
+                        <li className="dropdown-menu li-desplegable">Favorites <i className="far fa-bookmark"></i></li>
+                        </Link>
+                        
+                    </ul>
+                </nav>
+            }
         </header>
     )
 }

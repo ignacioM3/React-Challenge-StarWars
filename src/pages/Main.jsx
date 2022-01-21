@@ -56,12 +56,12 @@ function Main() {
                 </div>
             </div>
             <div className='pagination'>
-                <button className="button" onClick={handlePrevious}>Previous</button>
+                <button className="button" onClick={handlePrevious}><i class="fas fa-angle-double-left"></i></button>
                 {
                     pag.map((pag, index) => <Number key={index} num={pag} setNumber={setNumber} />)
 
                 }
-                <button className='button next' onClick={handleNext} >Next</button>
+                <button className='button next' onClick={handleNext} ><i class="fas fa-angle-double-right"></i></button>
             </div>
 
         </main>
