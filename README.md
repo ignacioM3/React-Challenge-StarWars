@@ -22,5 +22,7 @@ Practica donde utilicé esta libreria de javascript sacando el mayor potencial a
 - npm i  // para instalar todas las dependencias !
 - npm start //  para poder disfrutar de este gran challenge
 
+O podes verlo directamente desde gitPages https://ignaciom3.github.io/React-Challenge-StarWars/
+
 ## Conclusión 
 Proyecto el cual a primera vista no parecia tener grandes dificultades, pero en el camino aparecieron las problematicas y complejidad de lo pedido, pero me ayudo a estudiar y leer mas documentación de Redux y entender a profundidad la complejidad de esta librería. En fin este challenge me deja como tarea seguir incursionando y mejorando Redux y otros puntos de React.
