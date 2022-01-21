@@ -4,6 +4,7 @@ import { addFavorite, deleteFavorite } from '../actions/favorite'
 
 function Card({ name, climate, terrain, diameter }) {
     const dispatch = useDispatch()
+    
     const initialState = true;
 
     const [buttonFavorite, setButton] = useState(initialState)
