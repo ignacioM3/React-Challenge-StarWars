@@ -4,12 +4,14 @@ function useFetchPlanets(url) {
 
     const [state, setState] = useState({
         loading: true,
-        planets: null
+        planets: null,
+        count: 0
     })
     useEffect(() =>{
         setState({
             loading: true,
-            data: null
+            planets: null,
+            count: 0
         })
 
         fetch(url)
@@ -17,7 +19,8 @@ function useFetchPlanets(url) {
         .then(planets => {
                 setState({
                     loading: false,
-                    planets: planets.results
+                    planets: planets.results,
+                    count: planets.count
                 })
         })
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import Card from '../components/Card'
+import PlanetCard from '../components/PlanetCard'
 import '../styles/main.css'
 
 
@@ -27,10 +27,10 @@ export const Result = () => {
                                 result.map((planet) => {
                                     for (let i = 0; i < favorites.length; i++) {
                                         if (favorites[i].name === planet.name) {
-                                            planet.favorite = true
+                                            planet.favorite = false
                                         }
                                     }
-                                    return <Card key={planet.create} {...planet} />
+                                    return <PlanetCard key={planet.create} {...planet} />
 
                                 })
                         }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import CardFavorite from '../components/CardFavorite'
+import PlanetCard from '../components/PlanetCard'
 
 function Favorite() {
 
@@ -12,15 +12,9 @@ function Favorite() {
             <div class="container-card">
                 <div class="row">
                     {
-                        favorites.map((product, index) =>
-                            <CardFavorite key={index}
-                                name={product.name}
-                                diameter={product.diameter}
-                                climate={product.climate}
-                                terrain={product.terrain}
-                            />
+                        favorites.map((planet) =>
+                            <PlanetCard key={planet.created} {...planet}/>
                         )
-
                     }
                 </div>
             </div>

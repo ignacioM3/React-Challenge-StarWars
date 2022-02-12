@@ -4,7 +4,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { search } from '../actions/favorite';
 import useForm from '../hooks/useForm'
 
+const imagesPath = require.context('../assets/images')
+
+
 function Header() {
+
 
     const [searchDrop, setSearch] = useState(false)
     const [burger, setBurger] = useState(false)
@@ -44,11 +48,11 @@ function Header() {
         <header >
             <div className='header'>
                 <Link to="/React-Challenge-StarWars">
-                    <img className="img-logo" src="./assets/images/1280px-Star_Wars_Logo.svg.png" alt="" />
+                    <img className="img-logo" src={imagesPath("./1280px-Star_Wars_Logo.svg.png")} alt="" />
                 </Link>
                 <nav className="nav__links">
                     <ul >
-                        <li><Link to="/React-Challenge-StarWars">Planets <i className="fas fa-globe-americas"></i></Link></li>
+                        <li><Link to="/">Planets <i className="fas fa-globe-americas"></i></Link></li>
                         <li><Link to="/React-Challenge-StarWars/favorite">Favorite <i className="far fa-bookmark"></i></Link></li>
                     </ul>
                 </nav>
