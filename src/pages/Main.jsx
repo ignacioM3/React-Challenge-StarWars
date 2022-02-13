@@ -4,7 +4,7 @@ import '../styles/main.css'
 import useFetchPlanets from '../hooks/useFetchPlanets'
 import Number from '../components/Number'
 import { useSelector } from "react-redux";
-import { useEffect } from 'react'
+/* import { useEffect } from 'react' */
 
 function Main() {
 
@@ -13,9 +13,9 @@ function Main() {
     const {favorites} = useSelector((state) => state.favoriteReducer)
 
   
-    useEffect(() => {
+    /* useEffect(() => {
       localStorage.setItem('favorite', JSON.stringify(favorites))
-   }, [favorites]);
+   }, [favorites]); */
 
     let url = `https://swapi.dev/api/planets/?page=${number}`
 
