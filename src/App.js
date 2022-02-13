@@ -9,8 +9,8 @@ import { Result } from "./pages/Result";
 
 
 function App() {
-  return (
 
+  return (
     <Provider store={store}>
       <BrowserRouter>
         <Header />

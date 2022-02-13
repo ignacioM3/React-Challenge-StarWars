@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux'
 import PlanetCard from '../components/PlanetCard'
 
 function Favorite() {
+    
+    
 
     const { favorites } = useSelector(state => state.favoriteReducer)
 
