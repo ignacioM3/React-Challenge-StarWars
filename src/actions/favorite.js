@@ -16,7 +16,6 @@ export const search = (keywords) =>{
         try {
             const response = await fetch(`https://swapi.dev/api/planets/?search=${keywords}`);
             const data = await response.json()
-            console.log(data)
             dispatch(showResult({
                 result: data.results,
                 keywords,

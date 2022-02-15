@@ -6,7 +6,6 @@ import '../styles/main.css'
 
 export const Result = () => {
     const { result, keywords } = useSelector(state => state.favoriteReducer.search)
-    console.log(result)
 
     const { favorites } = useSelector(state => state.favoriteReducer)
 

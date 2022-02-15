@@ -52,7 +52,7 @@ function Header() {
                 </Link>
                 <nav className="nav__links">
                     <ul >
-                        <li><Link to="/">Planets <i className="fas fa-globe-americas"></i></Link></li>
+                        <li><Link to="/React-Challenge-StarWars/">Planets <i className="fas fa-globe-americas"></i></Link></li>
                         <li><Link to="/React-Challenge-StarWars/favorite">Favorite <i className="far fa-bookmark"></i></Link></li>
                     </ul>
                 </nav>
