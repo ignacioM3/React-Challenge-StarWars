@@ -59,11 +59,11 @@ function Main() {
                             )
                             : (
                                  planets.map((planet) => {
-                                  for (let i = 0; i < favorites.length; i++) {
+                                  /* for (let i = 0; i < favorites.length; i++) {
                                     if(favorites[i].name === planet.name){
                                       planet.favorite = false;
                                     }
-                                  }
+                                  } */
                                   return  <PlanetCard key={planet.created}{...planet}/>
                                 }) 
                               )

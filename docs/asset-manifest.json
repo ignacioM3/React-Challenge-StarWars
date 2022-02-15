@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a4ba94c7.css",
-    "main.js": "/static/js/main.4b7d96f5.js",
+    "main.js": "/static/js/main.8e9fcb16.js",
     "static/media/Mustafar.png": "/static/media/Mustafar.de3a988e4de63c4691e5.png",
     "static/media/Geonosis.png": "/static/media/Geonosis.9867199a4c104da29a3b.png",
     "static/media/Hoth.png": "/static/media/Hoth.6a2c34525702df86fdef.png",
@@ -66,10 +66,10 @@
     "static/media/Polis Massa.png": "/static/media/Polis Massa.b842d845659c2849bd63.png",
     "index.html": "/index.html",
     "main.a4ba94c7.css.map": "/static/css/main.a4ba94c7.css.map",
-    "main.4b7d96f5.js.map": "/static/js/main.4b7d96f5.js.map"
+    "main.8e9fcb16.js.map": "/static/js/main.8e9fcb16.js.map"
   },
   "entrypoints": [
     "static/css/main.a4ba94c7.css",
-    "static/js/main.4b7d96f5.js"
+    "static/js/main.8e9fcb16.js"
   ]
 }
