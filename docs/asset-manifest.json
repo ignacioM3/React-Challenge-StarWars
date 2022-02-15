@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a4ba94c7.css",
-    "main.js": "/static/js/main.1dcd78d5.js",
+    "main.js": "/static/js/main.ccb3e94a.js",
     "static/media/Mustafar.png": "/static/media/Mustafar.de3a988e4de63c4691e5.png",
     "static/media/Geonosis.png": "/static/media/Geonosis.9867199a4c104da29a3b.png",
     "static/media/Hoth.png": "/static/media/Hoth.6a2c34525702df86fdef.png",
@@ -15,7 +15,7 @@
     "static/media/Yavin IV.png": "/static/media/Yavin IV.ec4c4f2aa80ae717edc7.png",
     "static/media/Corellia.png": "/static/media/Corellia.e918b64397ee41a2ff70.png",
     "static/media/Coruscant.png": "/static/media/Coruscant.ef2c1b4eb35d00204a25.png",
-    "static/media/iridonia.png": "/static/media/iridonia.e1fc365610ba62130fa2.png",
+    "static/media/Iridonia.png": "/static/media/Iridonia.e1fc365610ba62130fa2.png",
     "static/media/Eriadu.png": "/static/media/Eriadu.f80d9cec260414767f98.png",
     "static/media/Iktotch.png": "/static/media/Iktotch.cbf4a5a2e192b808a5d2.png",
     "static/media/Endor.png": "/static/media/Endor.53ef1c8f58971af7fa18.png",
@@ -66,10 +66,10 @@
     "static/media/Polis Massa.png": "/static/media/Polis Massa.b842d845659c2849bd63.png",
     "index.html": "/index.html",
     "main.a4ba94c7.css.map": "/static/css/main.a4ba94c7.css.map",
-    "main.1dcd78d5.js.map": "/static/js/main.1dcd78d5.js.map"
+    "main.ccb3e94a.js.map": "/static/js/main.ccb3e94a.js.map"
   },
   "entrypoints": [
     "static/css/main.a4ba94c7.css",
-    "static/js/main.1dcd78d5.js"
+    "static/js/main.ccb3e94a.js"
   ]
 }
