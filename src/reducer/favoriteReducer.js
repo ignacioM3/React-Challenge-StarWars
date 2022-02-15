@@ -5,7 +5,8 @@ const initialState = {
         result: [],
         keywords : ""
     },
-    favorites:  JSON.parse(localStorage.getItem("favorite")) 
+    
+    favorites:  JSON.parse(localStorage.getItem("favorite")) ? JSON.parse(localStorage.getItem("favorite")) : []
 }
 
 
