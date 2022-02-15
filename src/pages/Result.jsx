@@ -24,11 +24,11 @@ export const Result = () => {
                                 <h2 className='page2 error-msg'>There are no planets that match your search</h2>
                                 :
                                 result.map((planet) => {
-                                    /* for (let i = 0; i < favorites.length; i++) {
+                                    for (let i = 0; i < favorites.length; i++) {
                                         if (favorites[i].name === planet.name) {
                                             planet.favorite = false
                                         }
-                                    } */
+                                    }
                                     return <PlanetCard key={planet.create} {...planet} />
 
                                 })
