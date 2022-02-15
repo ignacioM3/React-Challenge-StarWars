@@ -40,7 +40,7 @@ function PlanetCard(props) {
             <div className="col-md-4">
                 <div className="card">
                     <div className="product">
-                        <img /* src={imagesPath(`./planets/${name}.png`)} */ src={`/React-Challenge-StarWars/static/media/${name}.png`} alt="" className="rounded"
+                        <img  src={imagesPath(`./planets/${name}.png`)}  alt="" className="rounded"
                             width="160" />
                         <h5 className='name-planets'>
                             {name}
